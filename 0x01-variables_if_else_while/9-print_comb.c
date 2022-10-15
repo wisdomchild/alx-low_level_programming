@@ -2,23 +2,26 @@
 
 /**
  * main - main block
- * Description: Print all numbers of base64 in lowercase.
- * You can only use `putchar`, and only 3 times.
+ * Description: Print all possible combinations fo single-digit numbers.
+ * Numbers must be separated by commas and a space.
+ * You can only use `putchar` to print to console
+ * You can only use `putchar` up to four times.
+ * You are not allowed to use any variable of type `char`.
  * Return: 0
  */
 
 int main(void)
 {
 	int x;
-	char c;
 
 	for (x = 48; x < 58; x++)
 	{
 		putchar(x);
-	}
-	for (c = 'a'; c < 'g'; c++)
-	{
-		putchar(c);
+		if (x < 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
 	}
 	putchar('\n');
 	return (0);
