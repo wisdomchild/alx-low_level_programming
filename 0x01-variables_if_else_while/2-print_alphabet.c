@@ -4,8 +4,8 @@
  * main - main block
  * Description: Use `putchar` function to print the alphabet in lowercase.
  * Return: 0
- * /
-Int main(void)
+ */
+int main(void)
 {
 	char c = 'a';
 
@@ -14,7 +14,6 @@ Int main(void)
 		putchar(c);
 		c++;
 	}
-
 	putchar('\n');
 	return (0);
 }
